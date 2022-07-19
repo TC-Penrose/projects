@@ -1,6 +1,6 @@
 body {
+    background:url('rustyNose.gif');       
     background-size: cover;
-    background-position: center;
-    background-image:url('sunset.jpeg');
+    background-position: center;     
     text-align: center;
 }
