@@ -1,6 +1,5 @@
 console.log("Hello world")
 
-let introField = document.querySelector(".intro-field")
 let button = document.querySelector("button")
 
 const fiddle = document.querySelector('.fiddle')
