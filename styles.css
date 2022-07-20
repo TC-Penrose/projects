@@ -4,3 +4,32 @@ body {
     background-position: center;     
     text-align: center;
 }
+
+button {
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    border-width: normal;
+    transition-duration: 0.4s;
+}
+  
+button:hover {
+    background-color: rgb(0, 119, 255); /* light blue */
+    color: white;
+}
+
+.startgame:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+
+.intro {
+    font-size: 70px;
+    font-weight: bold;
+}
+    
+.response-to-send-message {
+    font-size: 60px;
+    font-weight: normal;
+}

@@ -7,6 +7,7 @@ const banjo = document.querySelector('.banjo')
 const guitar = document.querySelector('.guitar')
 const bass = document.querySelector('.bass')
 const mandolin = document.querySelector('.mandolin')
+const startgame = document.querySelector('.startgame')
 
 fiddle.onclick = function(){
     let message = "Ur a fiddler"
@@ -15,7 +16,6 @@ fiddle.onclick = function(){
 
     sendMessageResponseArea.textContent = message
 }
-
 banjo.onclick = function(){
     let message = "Ur a banjo picker"
     console.log(message)
@@ -23,7 +23,6 @@ banjo.onclick = function(){
 
     sendMessageResponseArea.textContent = message
 }
-
 guitar.onclick = function(){
     let message = "Ur a guitar strummer"
     console.log(message)
@@ -31,7 +30,6 @@ guitar.onclick = function(){
 
     sendMessageResponseArea.textContent = message
 }
-
 bass.onclick = function(){
     let message = "Ur a bass player"
     console.log(message)
@@ -41,6 +39,13 @@ bass.onclick = function(){
 }
 mandolin.onclick = function(){
     let message = "Ur a mando chopper"
+    console.log(message)
+    const sendMessageResponseArea = document.querySelector('.response-to-send-message')
+
+    sendMessageResponseArea.textContent = message
+}
+startgame.onclick = function(){
+    let message = "letsgo"
     console.log(message)
     const sendMessageResponseArea = document.querySelector('.response-to-send-message')
 
