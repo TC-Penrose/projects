@@ -2,6 +2,14 @@ console.log("Hello world")
 
 let button = document.querySelector("button")
 
+const chooseinstrument = document.querySelector('.chooseinstrument')
+const goButton = document.querySelector('.goButton')
+chooseinstrument.style ["display"] = "none"
+
+goButton.onclick = function(){
+    chooseinstrument.style ["display"] = "block"
+}
+
 const fiddle = document.querySelector('.fiddle')
 const banjo = document.querySelector('.banjo')
 const guitar = document.querySelector('.guitar')
@@ -45,9 +53,5 @@ mandolin.onclick = function(){
     sendMessageResponseArea.textContent = message
 }
 startgame.onclick = function(){
-    let message = "letsgo"
-    console.log(message)
-    const sendMessageResponseArea = document.querySelector('.response-to-send-message')
-
-    sendMessageResponseArea.textContent = message
+    document.write ()
 }
