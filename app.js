@@ -8,8 +8,9 @@ const fiddle = document.querySelector('.fiddle')
 fiddle.onclick = function(){
     let message = "Ur a fiddler"
     console.log(message)
-    document.write(message)
+    const sendMessageResponseArea = document.querySelector('.response-to-send-message')
 
+    sendMessageResponseArea.textContent = message
 }
 
 const banjo = document.querySelector('.banjo')
@@ -17,7 +18,8 @@ const banjo = document.querySelector('.banjo')
 banjo.onclick = function(){
     let message = "Ur a banjo picker"
     console.log(message)
-    document.write(message)
-    
+    const sendMessageResponseArea = document.querySelector('.response-to-send-message')
+
+    sendMessageResponseArea.textContent = message
 }
 
