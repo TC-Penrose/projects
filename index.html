@@ -1,19 +1,25 @@
 <html>
     <link rel="stylesheet" href="styles.css"/>
 
-    <input class="username-field"/> <button class="goButton">Go</button>
-
-    <div class="chooseinstrument">
-        <div class="intro">Choose your instrument:</div>
+    <div class="intro">Choose your instrument:</div>
         <div class="response-to-send-message">
-        </div> 
-        <button class="fiddle">Fiddle</button>
-        <button class="banjo">Banjo</button>
-        <button class="guitar">Guitar</button>
-        <button class="bass">Bass</button>
-        <button class="mandolin">Mandolin</button>
-        <br><button class="startgame">Let's Go</button>
     </div>
+    <br>
+    <select class="instrumentSelect" name="option">
+        <option value="" disabled selected>Choose your instrument</option>
+        <option value="fiddle">Fiddle</option>
+        <option value="banjo">Banjo</option>
+        <option value="guitar">Guitar</option>
+        <option value="bass">Bass</option>
+        <option value="mandolin">Mandolin</option>
+    </select>
+    <br>
+    <div class="intro">Type your username:</div>
+    <input class="username-field"/> 
+    <br> 
+    <button class="startgame">Go</button>
+
+
     <script src="app.js"></script>
 
 </html>
