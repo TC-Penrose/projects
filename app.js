@@ -13,7 +13,7 @@ startgame.onclick = function(){
     console.log(username)
     if (username.length > 0 && instrument.length > 0){
         document.querySelector ('.startscreen').style.display = "none";
-        document.body.style.background = "url(sunset.jpeg)";
+        document.body.style.background = "url(rusty.gif)";
         document.body.style.backgroundPosition = 'center';
         document.body.style.backgroundSize = 'cover';
         
@@ -21,5 +21,8 @@ startgame.onclick = function(){
         let sendMessageResponseArea = document.querySelector('.textonscreen')
         sendMessageResponseArea.textContent = message
         console.log(message)
-    } 
-}
+        setTimeout ()
+        
+    }
+    
+}   
