@@ -7,8 +7,8 @@ const startgame = document.querySelector('.startgame')
 
 const nomoretext = ()=>{
     message = ""
-    sendMessageResponseArea = document.querySelector('.textonscreen')
-    sendMessageResponseArea.textContent = message
+    textOnScreen = document.querySelector('.textonscreen')
+    textOnScreen.textContent = message
 }
 
 const doNextThing = ()=>{
@@ -16,10 +16,7 @@ const doNextThing = ()=>{
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
     document.querySelector ('.doNextThing').style.display = "block";
-    let message = "This works!"
-    let sendMessageResponseArea = document.querySelector('.textonscreen')
-    sendMessageResponseArea.textContent = message
-    setTimeout(nomoretext, 2000)
+    nomoretext()
 }
 
 startgame.onclick = function(){
@@ -30,8 +27,8 @@ startgame.onclick = function(){
     if (username.length > 0 && instrument.length > 0){
         document.querySelector ('.startscreen').style.display = "none";
         let message = "Yo " + username + ", press the 'A' key at the right time."
-        let sendMessageResponseArea = document.querySelector('.textonscreen')
-        sendMessageResponseArea.textContent = message
+        let textOnScreen = document.querySelector('.textonscreen')
+        textOnScreen.textContent = message
         console.log(message)
         setTimeout(doNextThing, 1000)
         
