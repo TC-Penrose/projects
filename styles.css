@@ -38,7 +38,7 @@ body {
 }
 
 @keyframes noteA_animation {
-    0% {left: 300px; top: 100px;}
+    0% {left: 300px; top: 0px;}
     100% {left:0px; top:0px;}
 } */
 

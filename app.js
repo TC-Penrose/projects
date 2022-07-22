@@ -5,6 +5,7 @@ let usernameField = document.querySelector('.usernameField')
 let instrumentSelect = document.querySelector('select')
 let instrument = instrumentSelect.value
 const startgame = document.querySelector('.startgame')
+// let instrumentChosen = ["fiddle", "banjo", "guitar", "bass", "mandolin"]
 
 const nomoretext = ()=>{
     message = ""
@@ -13,8 +14,27 @@ const nomoretext = ()=>{
 }
 
 const doNextThing = ()=>{
-    document.body.style.background = "url(guitar.png)";
-    document.body.style.backgroundSize = "700px, 700px";
+    if (instrumentSelect.value === "guitar"){
+        document.body.style.background = "url(guitar.png)";
+        console.log(instrumentSelect.value)
+        document.body.style.backgroundSize = "700px, 700px";
+    } else if (instrumentSelect.value === "fiddle"){
+        document.body.style.background = "url(fiddle.png)";
+        console.log(instrumentSelect.value)
+        document.body.style.backgroundSize = "700px, 700px";
+    } else if (instrumentSelect.value === "banjo"){
+        document.body.style.background = "url(banjo.png)";
+        console.log(instrumentSelect.value)
+        document.body.style.backgroundSize = "700px, 700px";
+    } else if (instrumentSelect.value === "bass"){
+        document.body.style.background = "url(bass.png)";
+        console.log(instrumentSelect.value)
+        document.body.style.backgroundSize = "700px, 700px";
+    } else if (instrumentSelect.value === "mandolin"){
+            document.body.style.background = "url(mandolin.png)";
+            console.log(instrumentSelect.value)
+            document.body.style.backgroundSize = "700px, 700px";
+    } 
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundRepeat = "no-repeat";
     document.querySelector ('.doNextThing').style.display = "block";
