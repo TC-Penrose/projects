@@ -1,10 +1,11 @@
 console.log("Hello world")
 
-let button = document.querySelector("button")
+// let button = document.querySelector("button")
 let usernameField = document.querySelector('.usernameField')
 let instrumentSelect = document.querySelector('select')
 let instrument = instrumentSelect.value
 const startgame = document.querySelector('.startgame')
+const noteA = document.querySelector('.noteA')
 // let instrumentChosen = ["fiddle", "banjo", "guitar", "bass", "mandolin"]
 
 const nomoretext = ()=>{
@@ -39,7 +40,16 @@ const doNextThing = ()=>{
     document.body.style.backgroundRepeat = "no-repeat";
     document.querySelector ('.doNextThing').style.display = "block";
     nomoretext()
+    document.onkeydown = function (event){
+        event.key=="a"
+        // if (){
+            message = "Good job!"
+            textOnScreen = document.querySelector('.textonscreen')
+            textOnScreen.textContent = message
+        // }
+    }
 }
+
 
 startgame.onclick = function(){
     let instrument = instrumentSelect.value
@@ -53,7 +63,6 @@ startgame.onclick = function(){
         textOnScreen.textContent = message
         console.log(message)
         setTimeout(doNextThing, 1000)
-        
     }
     
 }   
